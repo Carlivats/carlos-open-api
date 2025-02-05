@@ -1,2 +1,2 @@
-# is-it-cute
+# carlos-open-api
 Cat Rating Project
