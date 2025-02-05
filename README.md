@@ -1,2 +1,3 @@
 # carlos-open-api
-Cat Rating Project
+Open Api: Is it cute?
+[My Open API Project](https://github.com/Carlivats/carlos-open-api)
