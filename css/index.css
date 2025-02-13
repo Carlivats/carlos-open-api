@@ -1,18 +1,108 @@
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #ff6b81;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight:200;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Profile Page Styling */
+h1 {
+    color: #333;
     text-align: center;
-    background-color: #f8f9fa;
+}
+
+form {
+    background: white;
+    padding: 25px 100px 50px ;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Profile Image Preview */
+#preview-image {
+    margin-top: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff6b81;
 }
 
 #card {
     width: 500px;
+    margin: 20px auto;
+    padding: 20px;
     background: white;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 img {
-    width: 100%;
+    width: 60%;
     border-radius: 10px;
+}
+
+#catName {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+#catDescription {
+    text-align: left;
+    font-size: 16px;
 }
 
 #buttons {
@@ -21,5 +111,45 @@ img {
 
 button {
     margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
+#catTemperament ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#catTemperament li {
+    background-color:#ff6b81;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#catTemperament a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#catTemperament li p {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#dislike { background: #ff4d4d; color: white; }
+#like { background: #4caf50; color: white; }
+#superLike { background: #ff69b4; color: white; }
+
+
+
+#dislike:hover { background: #ff7979; color: white; }
+#like:hover { background: #6dd870; color: white; }
+#superLike:hover { background: #ff8fc7; color: white; }

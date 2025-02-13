@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+    </nav>    
+    <h1>Profile</h1>
+    <form id="profile-form">
+        <label for="profile-picture">Upload Profile Picture:</label>
+        <input type="file" id="profile-picture" accept="image/*">
+        <img id="preview-image" src="" alt="Profile Preview" style="width:150px; display:none;">
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your name">
+        
+        <label for="bio">Bio:</label>
+        <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+
+        <button type="submit">Save Profile</button>
+    </form>
+    
+    <script src="profile.js"></script>
+</body>
+</html>
